@@ -28,6 +28,7 @@ def hello(name):
 #  YOUR ROUTES GO BELOW THIS LINE
 #  Each exercise asks you to add a new @app.route here
 # ============================================================
+#exercise 1
 @app.route('/analyze/<word>')
 def analyze(word):
     count = len(word)
