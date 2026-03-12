@@ -28,24 +28,26 @@ def hello(name):
 #  YOUR ROUTES GO BELOW THIS LINE
 #  Each exercise asks you to add a new @app.route here
 # ============================================================
-#exercise s
+#exercises
 
 @app.route('/analyze/<word>')
 def analyze(word):
 
-    # Exercise 1
     num_chars = len(word)
 
-    # Exercise 2
     num_vowels = 0
-    for letter in word.lower():
-        if letter in "aeiou":
+    for char in word.lower():
+        if char in 'aeiou':
             num_vowels += 1
+
+    # Reverse the word
+    reversed_word = word[::-1]
 
     return render_template('analyze.html',
                            word=word,
                            num_chars=num_chars,
-                           num_vowels=num_vowels)
+                           num_vowels=num_vowels,
+                           reversed_word=reversed_word)
 
 
 # ============================================================
