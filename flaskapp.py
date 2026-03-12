@@ -32,7 +32,7 @@ def hello(name):
 @app.route('/analyze/<word>')
 def analyze(word):
     count = len(word)
-    return str(count)
+    return f"Word: {word}, Length: {count}"
 
 
 
