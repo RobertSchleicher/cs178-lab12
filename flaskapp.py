@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 
-# Lab 12 - Your Name
+# Lab 12- Robert Schleicher
 # Flask needs to know the name of this file to find templates and static files
 app = Flask(__name__)
 
@@ -11,8 +11,8 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     # render_template loads templates/home.html and sends it to the browser
-    return render_template('home.html', page_title="My Flask Site")
-
+    return render_template('home.html', page_title="My Flask Site"
+#Testing
 
 # ============================================================
 #  ROUTE 2 — Hello page with a URL variable
